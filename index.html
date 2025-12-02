@@ -3,60 +3,58 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Fashionista — E-commerce</title>
+  <title>Opal Vogue</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <header class="header">
+    <div class="header-box">
+      <div class="brand">Opal Vogue</div>
 
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <div class="brand">
-        <span class="logo">FASHIONISTA</span>
-      </div>
-
-      <form class="search" role="search" aria-label="Search products">
-        <input type="search" placeholder="Search for products..." aria-label="Search">
+      <form class="search">
+        <input type="search" placeholder="Search for products...">
       </form>
 
-      <nav class="header-actions" aria-label="User actions">
-        <button class="icon-btn" aria-label="notifications">🔔</button>
-        <button class="icon-btn" aria-label="profile">👤</button>
+      <nav class="header0">
+        <button class="icon-btn">🔔</button>
+        <button class="icon-btn">👤</button>
         <button class="login-btn">Login</button>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="hero" aria-labelledby="hero-title">
-    <div class="hero-bg" role="img" aria-label="Clothes on rack"></div>
+  <section class="hero">
+    <div class="hero-bg"></div>
 
     <div class="hero-content">
-      <h1 id="hero-title">Summer Sale is Here!</h1>
-      <p class="lead">Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.</p>
+      <h1>Summer Deals Are Live!</h1>
+      <p class="lead">Grab up to 70% off on trending outfits. Upgrade your style with fresh seasonal picks.</p>
       <a class="btn primary" href="#products">Shop Now</a>
     </div>
   </section>
 
   <!-- Flash Sale -->
-  <div class="flash-sale" aria-hidden="false">
+  <div class="flash-sale">
     <div class="flash-inner">
       <span>Flash Sale: Extra 20% OFF! Ends in</span>
-      <div class="countdown" aria-hidden="true">
-        <span class="cd">02</span><span class="sep">:</span>
-        <span class="cd">15</span><span class="sep">:</span>
+      <div class="countdown">
+        <span class="cd">02</span><span>:</span>
+        <span class="cd">15</span><span>:</span>
         <span class="cd">42</span>
       </div>
     </div>
   </div>
 
-  <main id="main" class="main" role="main">
+  <main class="main">
 
     <div class="layout">
-      <!-- LEFT SIDEBAR FILTERS -->
-      <aside class="filters" aria-labelledby="filters-title">
-        <h2 id="filters-title">Filters</h2>
+
+      <!-- LEFT SIDEBAR -->
+      <aside class="filters">
+        <h2>Filters</h2>
 
         <div class="filter-block">
           <strong>Category</strong>
@@ -80,27 +78,30 @@
         </div>
       </aside>
 
-      <!-- PRODUCTS AREA -->
+      <!-- PRODUCTS -->
       <section class="products-area" id="products">
 
-        <!-- Category chips row -->
-        <div class="category-row" role="list">
-          <article class="category-chip" role="listitem">
+        <!-- Category chips -->
+        <div class="category-row">
+          <article class="category-chip">
             <img src="images/mens_shopping.jpeg" alt="Men category">
             <span>Men</span>
           </article>
-          <article class="category-chip" role="listitem">
+
+          <article class="category-chip">
             <img src="images/women.webp" alt="Women category">
             <span>Women</span>
           </article>
-          <article class="category-chip" role="listitem">
+
+          <article class="category-chip">
             <img src="images/accessories.jpg" alt="Accessories">
             <span>Accessories</span>
           </article>
         </div>
 
-        <!-- product cards grid -->
-        <section class="product-grid" aria-label="Product list">
+        <!-- Product cards -->
+        <section class="product-grid">
+
           <article class="card product-card">
             <img src="images/denim.jpg" alt="Classic Denim Jacket">
             <div class="card-body">
@@ -136,14 +137,15 @@
               <button class="btn add">Add to Cart</button>
             </div>
           </article>
-        </section>
 
+        </section>
       </section>
     </div>
 
     <!-- Best Sellers -->
-    <section class="section best-sellers" aria-labelledby="best-title">
-      <h2 id="best-title">Best Sellers</h2>
+    <section class="section best-sellers">
+      <h2>Best Sellers</h2>
+
       <div class="best-grid">
         <article class="card small">
           <img src="images/denim.jpg" alt="Denim Jacket">
@@ -169,17 +171,17 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="section testimonials" aria-labelledby="test-title">
-      <h2 id="test-title">What Our Customers Say</h2>
+    <section class="section testimonials">
+      <h2>What Our Customers Say</h2>
 
       <div class="testimonial-row">
         <blockquote class="testimonial-card">
-          <p>"Absolutely love the quality and fast shipping. My new favorite store!"</p>
+          <p>"Quality is amazing and delivery was quick. Totally worth it!"</p>
           <footer>— Emily R.</footer>
         </blockquote>
 
         <blockquote class="testimonial-card">
-          <p>"Great selection and amazing deals. The flash sale was a steal!"</p>
+          <p>"Loved the deals! The flash sale had great choices."</p>
           <footer>— James K.</footer>
         </blockquote>
 
@@ -191,11 +193,11 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter" aria-labelledby="nl-title">
-      <h2 id="nl-title">Stay in the Loop!</h2>
-      <p>Sign up for exclusive offers, new arrivals, and more.</p>
-      <form class="nl-form" action="#" method="post" aria-label="Subscribe">
-        <label for="email" class="visually-hidden">Email</label>
+    <section class="newsletter">
+      <h2>Stay Updated</h2>
+      <p>Join our list to get updates on offers, new collections, and more.</p>
+
+      <form class="nl-form">
         <input id="email" type="email" placeholder="Your email address" required>
         <button class="btn subscribe">Subscribe</button>
       </form>
@@ -204,8 +206,9 @@
   </main>
 
   <!-- Footer -->
-  <footer class="site-footer" role="contentinfo">
+  <footer class="site-footer">
     <div class="footer-grid">
+
       <div>
         <h4>Account</h4>
         <ul>
@@ -241,9 +244,10 @@
           <li>Twitter</li>
         </ul>
       </div>
+
     </div>
 
-    <div class="footer-bottom">© 2025 Fashionista. All rights reserved.</div>
+    <div class="footer-bottom">© 2025 Opal Vogue. All rights reserved.</div>
   </footer>
 
 </body>
