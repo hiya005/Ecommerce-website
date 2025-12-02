@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fashionista — E-commerce</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="brand">
+        <span class="logo">FASHIONISTA</span>
+      </div>
+
+      <form class="search" role="search" aria-label="Search products">
+        <input type="search" placeholder="Search for products..." aria-label="Search">
+      </form>
+
+      <nav class="header-actions" aria-label="User actions">
+        <button class="icon-btn" aria-label="notifications">🔔</button>
+        <button class="icon-btn" aria-label="profile">👤</button>
+        <button class="login-btn">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-bg" role="img" aria-label="Clothes on rack"></div>
+
+    <div class="hero-content">
+      <h1 id="hero-title">Summer Sale is Here!</h1>
+      <p class="lead">Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.</p>
+      <a class="btn primary" href="#products">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- Flash Sale -->
+  <div class="flash-sale" aria-hidden="false">
+    <div class="flash-inner">
+      <span>Flash Sale: Extra 20% OFF! Ends in</span>
+      <div class="countdown" aria-hidden="true">
+        <span class="cd">02</span><span class="sep">:</span>
+        <span class="cd">15</span><span class="sep">:</span>
+        <span class="cd">42</span>
+      </div>
+    </div>
+  </div>
+
+  <main id="main" class="main" role="main">
+
+    <div class="layout">
+      <!-- LEFT SIDEBAR FILTERS -->
+      <aside class="filters" aria-labelledby="filters-title">
+        <h2 id="filters-title">Filters</h2>
+
+        <div class="filter-block">
+          <strong>Category</strong>
+          <label><input type="checkbox"> Men</label>
+          <label><input type="checkbox"> Women</label>
+          <label><input type="checkbox"> Accessories</label>
+        </div>
+
+        <div class="filter-block">
+          <strong>Price</strong>
+          <label><input type="radio" name="price"> Under $50</label>
+          <label><input type="radio" name="price"> $50 - $100</label>
+          <label><input type="radio" name="price"> $100+</label>
+        </div>
+
+        <div class="filter-block">
+          <strong>Color</strong>
+          <label><input type="checkbox"> Black</label>
+          <label><input type="checkbox"> White</label>
+          <label><input type="checkbox"> Blue</label>
+        </div>
+      </aside>
+
+      <!-- PRODUCTS AREA -->
+      <section class="products-area" id="products">
+
+        <!-- Category chips row -->
+        <div class="category-row" role="list">
+          <article class="category-chip" role="listitem">
+            <img src="images/mens_shopping.jpeg" alt="Men category">
+            <span>Men</span>
+          </article>
+          <article class="category-chip" role="listitem">
+            <img src="images/women.webp" alt="Women category">
+            <span>Women</span>
+          </article>
+          <article class="category-chip" role="listitem">
+            <img src="images/accessories.jpg" alt="Accessories">
+            <span>Accessories</span>
+          </article>
+        </div>
+
+        <!-- product cards grid -->
+        <section class="product-grid" aria-label="Product list">
+          <article class="card product-card">
+            <img src="images/denim.jpg" alt="Classic Denim Jacket">
+            <div class="card-body">
+              <h3 class="product-title">Classic Denim Jacket</h3>
+              <p class="product-price"><small class="old">$99.99</small> <strong>$79.99</strong></p>
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <img src="images/sneakers.jpg" alt="Men's White Sneakers">
+            <div class="card-body">
+              <h3 class="product-title">Men's White Sneakers</h3>
+              <p class="product-price"><strong>$59.99</strong></p>
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <img src="images/dress.jpg" alt="Women's Summer Dress">
+            <div class="card-body">
+              <h3 class="product-title">Women's Summer Dress</h3>
+              <p class="product-price"><strong>$49.99</strong></p>
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </article>
+
+          <article class="card product-card">
+            <img src="images/Handbag.jpg" alt="Leather Handbag">
+            <div class="card-body">
+              <h3 class="product-title">Leather Handbag</h3>
+              <p class="product-price"><strong>$120.00</strong></p>
+              <button class="btn add">Add to Cart</button>
+            </div>
+          </article>
+        </section>
+
+      </section>
+    </div>
+
+    <!-- Best Sellers -->
+    <section class="section best-sellers" aria-labelledby="best-title">
+      <h2 id="best-title">Best Sellers</h2>
+      <div class="best-grid">
+        <article class="card small">
+          <img src="images/denim.jpg" alt="Denim Jacket">
+          <h4>Denim Jacket</h4>
+          <p class="product-price"><strong>$79.99</strong></p>
+          <button class="btn small">Add to Cart</button>
+        </article>
+
+        <article class="card small">
+          <img src="images/sneakers.jpg" alt="White Sneakers">
+          <h4>White Sneakers</h4>
+          <p class="product-price"><strong>$59.99</strong></p>
+          <button class="btn small">Add to Cart</button>
+        </article>
+
+        <article class="card small">
+          <img src="images/dress.jpg" alt="Summer Dress">
+          <h4>Summer Dress</h4>
+          <p class="product-price"><strong>$49.99</strong></p>
+          <button class="btn small">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" aria-labelledby="test-title">
+      <h2 id="test-title">What Our Customers Say</h2>
+
+      <div class="testimonial-row">
+        <blockquote class="testimonial-card">
+          <p>"Absolutely love the quality and fast shipping. My new favorite store!"</p>
+          <footer>— Emily R.</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>"Great selection and amazing deals. The flash sale was a steal!"</p>
+          <footer>— James K.</footer>
+        </blockquote>
+
+        <blockquote class="testimonial-card">
+          <p>"Customer service was super helpful. Will definitely shop again."</p>
+          <footer>— Sophia L.</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter" aria-labelledby="nl-title">
+      <h2 id="nl-title">Stay in the Loop!</h2>
+      <p>Sign up for exclusive offers, new arrivals, and more.</p>
+      <form class="nl-form" action="#" method="post" aria-label="Subscribe">
+        <label for="email" class="visually-hidden">Email</label>
+        <input id="email" type="email" placeholder="Your email address" required>
+        <button class="btn subscribe">Subscribe</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <h4>Account</h4>
+        <ul>
+          <li>Login</li>
+          <li>Register</li>
+          <li>Order History</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li>Contact Us</li>
+          <li>Shipping</li>
+          <li>Returns</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Refunds</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Follow Us</h4>
+        <ul class="socials">
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">© 2025 Fashionista. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>
